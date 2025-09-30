@@ -1,25 +1,14 @@
-import { faker } from '@faker-js/faker';
+import Login from '../pages/login';
+import SignUp from '../pages/signUpPage';
 
 describe('user registration', () => {
   beforeEach ('visit website', () => {
-    cy.visit('https://front.serverest.dev/cadastrarusuarios')
+    SignUp.signUpPage()
   })
 
   it('should register a user with a random email', () => {
-    cy.get('[data-testid="nome"]')
-      .type('Lino Vieira')
+    SignUp.fillSignUpForm()
 
-    const randomemail = faker.internet.email()
-    cy.get('[data-testid="email"]')
-      .type(randomemail)
-
-    cy.get('[data-testid="password"]')
-      .type('lino1234')
-
-    cy.get('[data-testid="entrar"]')
-      .click()
-    
-    cy.url()
-    .should('eq', 'https://front.serverest.dev/login');
+    SignUp.assertLoginPage()
   })
 })
