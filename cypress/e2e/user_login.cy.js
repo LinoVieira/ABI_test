@@ -1,19 +1,14 @@
-describe('user login', () => {
-    beforeEach ('visit website', () => {
-      cy.visit('https://front.serverest.dev/login')
+import Login from "../pages/login"
+import Home from "../pages/home"
+ 
+describe('user login', () => { 
+  beforeEach ('visit website', () => {
+      Login.visitLoginPage()
+    
     })
   
     it('shoud login the user', () => {
-      cy.get('[data-testid="email"]')
-        .type('lino@lino2.com')
-  
-      cy.get('[data-testid="senha"]')
-        .type('lino1234')
-  
-      cy.get('[data-testid="entrar"]')
-        .click()
-      
-      cy.url()
-      .should('eq', 'https://front.serverest.dev/home');
+      Login.inputData()
+      Home.loginPageAssert()
     })
   })
