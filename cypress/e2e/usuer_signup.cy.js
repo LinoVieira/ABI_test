@@ -5,7 +5,7 @@ describe('user registration', () => {
     cy.visit('https://front.serverest.dev/cadastrarusuarios')
   })
 
-  it('shoud register a user with a random email', () => {
+  it('should register a user with a random email', () => {
     cy.get('[data-testid="nome"]')
       .type('Lino Vieira')
 

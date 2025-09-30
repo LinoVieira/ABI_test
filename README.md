@@ -14,6 +14,10 @@ Before you begin, ensure you have the following installed:
 To install Cypress and other project dependencies, run:
 npm install
 
+## Install faker
+To install fake library to generate fake data:
+- npm install @faker-js/faker --save-dev
+
 ## Open Cypress
 After the installation is complete, you can open Cypress by running the following command:
 npx cypress open

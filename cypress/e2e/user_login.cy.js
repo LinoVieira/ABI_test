@@ -5,7 +5,7 @@ describe('user login', () => {
   
     it('shoud login the user', () => {
       cy.get('[data-testid="email"]')
-        .type('linosantos@lino.com')
+        .type('lino@lino2.com')
   
       cy.get('[data-testid="senha"]')
         .type('lino1234')
