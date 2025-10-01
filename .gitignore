@@ -3,4 +3,4 @@ cypress/screenshots/
 cypress/reports/
 
 #Node
-node_modules/
+node_modules
