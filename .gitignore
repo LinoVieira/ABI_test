@@ -1,3 +1,6 @@
 #Cypress
 cypress/screenshots/
 cypress/results/
+
+#Node
+node_modules/

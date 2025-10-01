@@ -18,6 +18,10 @@ npm install
 To install fake library to generate fake data:
 - npm install @faker-js/faker --save-dev
 
+## Install repports
+To i nstall Mochawesome Report
+- npm install mochawesome mochawesome-report-generator --save-dev
+
 ## Open Cypress
 After the installation is complete, you can open Cypress by running the following command:
 npx cypress open
