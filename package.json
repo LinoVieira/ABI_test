@@ -14,6 +14,8 @@
     "faker": "^5.5.3"
   },
   "dependencies": {
-    "@faker-js/faker": "^10.0.0"
+    "@faker-js/faker": "^10.0.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-report-generator": "^6.3.0"
   }
 }
