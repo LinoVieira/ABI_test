@@ -3,7 +3,6 @@ class Login {
 
     visitLoginPage(){
         cy.visit('https://front.serverest.dev/login')
-        cy.screenshot('login')
     }
 
     inputData (){

@@ -2,5 +2,6 @@ export const elements = {
     nome: '[data-testid="nome"]',
     email: '[data-testid="email"]',
     password:'[data-testid="password"]',
-    entrar:'[data-testid="entrar"]'
+    entrar:'[data-testid="entrar"]',
+    URL:'https://front.serverest.dev/login'
 }
