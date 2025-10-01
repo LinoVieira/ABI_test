@@ -7,7 +7,7 @@ class Login {
 
     inputData (){
         cy.get(elements.email)
-        .type('lino@lino2.com')
+        .type('lino@lino21.com')
   
         cy.get(elements.senha)
         .type('lino1234')
