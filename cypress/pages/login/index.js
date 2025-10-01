@@ -3,6 +3,7 @@ class Login {
 
     visitLoginPage(){
         cy.visit('https://front.serverest.dev/login')
+        cy.screenshot('login')
     }
 
     inputData (){
@@ -14,6 +15,7 @@ class Login {
   
         cy.get(elements.entrar)
         .click()
+        
     }
 }
 export default new Login()

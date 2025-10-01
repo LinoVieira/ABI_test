@@ -14,7 +14,8 @@ class Products {
 
     cartAssertPage(){
         cy.url()
-      .should('eq', 'https://front.serverest.dev/carrinho');
+        .should('eq', 'https://front.serverest.dev/carrinho');
+        cy.screenshot('add products to cart')
     }
 }
 export default new Products()

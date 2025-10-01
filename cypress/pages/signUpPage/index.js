@@ -18,10 +18,12 @@ class SignUp {
 
         cy.get(elements.entrar)
         .click()
+        
     }
     assertLoginPage(){
         cy.url()
         .should('eq', 'https://front.serverest.dev/login');
+        cy.screenshot('login page')
     }
 }
 export default new SignUp()
